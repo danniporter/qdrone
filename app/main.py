@@ -317,9 +317,6 @@ class QdroneApp(App):
         joystick2.bind(pad=self.update_coordinates)
         self.root.add_widget(joystick2)
 
-class FullImage(Image):
-    pass
-
 
     def update_coordinates(self, joystick, pad):
         x = str(pad[0])[0:5]
